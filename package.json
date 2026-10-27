@@ -1,0 +1,25 @@
+{
+  "name": "dsh-session-failure-mark",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH Web GUI plugin: marks sidebar sessions whose latest turn failed",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

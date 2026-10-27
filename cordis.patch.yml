@@ -1,0 +1,7 @@
+# dsh-session-failure-mark bundle patch: adds the dual-face plugin row to the
+# web profile roster. The node half registers /api/session-failure-mark routes
+# that fold each Session's latest turn/end out of its stored log; the browser
+# half marks failed Sessions in the sidebar (leading dot, hover line, red title).
+- insert:
+    - id: ui-session-failure-mark
+      name: 'dsh-session-failure-mark'
